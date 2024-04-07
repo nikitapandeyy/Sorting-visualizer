@@ -240,3 +240,19 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+
+// Add event listener to toggle dropdown content visibility
+document.querySelector('.dropbtn').addEventListener('click', function() {
+    document.querySelector('.dropdown-content').classList.toggle('show');
+});
+
+// Close the dropdown content when clicking outside of it
+window.addEventListener('click', function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        const dropdown = document.querySelector('.dropdown-content');
+        if (dropdown.classList.contains('show')) {
+            dropdown.classList.remove('show');
+        }
+    }
+});
+

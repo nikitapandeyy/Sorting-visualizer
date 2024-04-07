@@ -11,7 +11,17 @@
 <body>
     <header>
         <h1>Sorting Visualizer</h1>
+        <div class="dropdown">
+            <button class="dropbtn">Sort Algorithms</button>
+            <div class="dropdown-content">
+                <a href="sorting/quick.html">Quick Sort</a>
+                <a href="sorting/bubble.html">Bubble Sort</a>
+                <a href="sorting/insertion.html">Insertion Sort</a>
+                <a href="sorting/selection.html">Selection Sort</a>
+            </div>
+        </div>
     </header>
+    
     <div class="container">
         <div class="controls">
             <label for="array-size">Array Size:</label>
@@ -61,9 +71,9 @@
             </div>
         </div>
     </footer>
-    
-   <!-- Circular mode toggle button -->
-   <div id="mode-toggle-btn" class="mode-toggle-btn" onclick="toggleMode()"></div>
+
+    <!-- Circular mode toggle button -->
+    <div id="mode-toggle-btn" class="mode-toggle-btn" onclick="toggleMode()"></div>
 
     <!-- Include your script.js file -->
     <script src="script.js"></script>
